@@ -28,7 +28,7 @@ vez antes de tomar una decisión tan importante como es el alquiler o la compra 
 :pushpin: Nodejs <br>
 
 =============== COMANDOS UTILIZADOS BACKEND LOOPBACK =================== <br>
-npm install -g loopback-cli <br>
+npm i -g @loopback/cli <br>
 npm i <br>
 npm install generate-password --save <br>
 npm install crypto-js --save <br>
