@@ -50,3 +50,4 @@ npm i cryptojs  <br>
 npm install ngx-captcha  <br>
 npm i express <br>
 ng s  <br>
+ng build <br>
