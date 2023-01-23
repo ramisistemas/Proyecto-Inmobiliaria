@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: angular-kubernetes-service
+spec:
+  ports:
+    - protocol: "TCP"
+      port: 4200        # The port inside the cluster
+      targetPort: 4200  # The port exposed by the service
+  type: NodePort        # Type of service
+  selector:
+    app: angular-kubernetes-v1
