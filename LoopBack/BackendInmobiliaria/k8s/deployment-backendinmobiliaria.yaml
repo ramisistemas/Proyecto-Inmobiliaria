@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: loopback-kubernetes
+spec:
+  selector:
+    matchLabels:
+      app: loopback-kubernetes
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: loopback-kubernetes
+    spec:
+      containers:
+        - name: loopback-kubernetes
+          image: ramisistemas/backendinmobiliaria:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 3000
